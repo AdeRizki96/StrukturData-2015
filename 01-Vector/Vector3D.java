@@ -1,13 +1,14 @@
 
-
 public class Vector3D
 {
     // instance variables - replace the example below with your own
-    private double x;
-    private double y;
-    private double z;
+  private double x;
+  private double y;
+  private double z;
+  
+    
    
-    public Vector3D(double x, double y, double z)
+    public  Vector3D(double x, double y, double z)
     {
        this.x=x;
        this.y=y;
@@ -28,7 +29,8 @@ public class Vector3D
     {
        return z;
     }
-
+    
+   
    
    
 }
