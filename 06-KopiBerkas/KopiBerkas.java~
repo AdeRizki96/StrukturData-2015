@@ -1,0 +1,27 @@
+
+import java.io.IOException;
+/**
+ * Write a description of class CopyBerkas here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class KopiBerkas {
+     public static void main(String[] args) {
+        try {
+            KopiBerkas kopiberkas = new KopiBerkas();
+            kopiberkas.copy("alodonya.txt");
+        }
+        catch (IOException kesalahan) {
+            System.out.printf("Terjadi kesalahan: %s", kesalahan);
+        }
+    }
+	public  void kopiberkas(String sumber,String sasaran ) throws IOException{
+		KopiBerkas kopi_berkas = new KopiBerkas();
+		kopi_berkas.copy();
+	}
+
+}
+    
+   
+
