@@ -1,0 +1,30 @@
+public class Kelompok 
+{
+
+   
+    
+   Kelompok(int awal, int akhir, double data[]){
+     this.awal=awal;
+     this.akhir=akhir;
+     this.data=data;
+     
+    }
+   public double hasil(){
+      return nilaiHasil;  
+    }
+    
+   public void hitung(){
+    
+   }
+    
+   public void run() {
+       
+        
+   }
+   Thread runner;
+   private final static int BANYAK_DATA = 100000000;
+   private int awal;
+   private int akhir;
+   private double[] data;
+   private double niaiHasil;
+}

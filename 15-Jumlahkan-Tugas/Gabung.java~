@@ -1,0 +1,36 @@
+
+public class Gabung {
+    private double[] data;
+    private Kelompok[] kelompok;
+    public static void main(String[] args) {
+     Kelompok hit01 = new kelompok(0,data.length/5-1,data);
+     Thread thread01 = new Thread(thread01);
+      
+     Kelompok hit02 = new kelompok(0,data.length/5,2*(data.length/5)-1,data);
+     Thread thread02 = new Thread(thread02);
+     
+     Kelompok hit03 = new kelompok(0,data.length/10,2*(data.length/5)-1,data);
+     Thread thread03 = new Thread(thread03);
+     
+     Kelompok hit04 = new kelompok(0,data.length/15,2*(data.length/5)-1,data);
+     Thread thread04 = new Thread(thread04);
+     
+     Kelompok hit05 = new kelompok(0,data.length/20,2*(data.length/5)-1,data);
+     Thread thread05 = new Thread(thread05);
+      
+     
+        
+
+        thread01.start();
+        thread02.start();
+        thread03.start();
+        thread04.start();
+        thread05.start();
+    }
+    
+    public Gabung(double[] data){
+    }
+    
+    public double hasil(){
+    }
+}
