@@ -5,14 +5,14 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class prima
+public class primaa
 {   
    //  int prima [] = new int[1000000];
 
     /**
      * Constructor for objects of class prime
      */
-   public prima()
+   public primaa()
    {   int angka = 50;
        
        for(int j=1;j<angka;j++){
