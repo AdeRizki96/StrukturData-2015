@@ -16,44 +16,53 @@ public class Client {
     public void chat() 
                 throws UnknownHostException, IOException {
         Socket socket = new Socket("localhost", 33333);
-        
+
+        Reader masukan=null;
+        BufferedReader masukanBuff=null;
+        int a=0;
         try {
-            
+             //for(;;){
             Scanner keyboard = new Scanner(System.in);
-            System.out.print("Pesan       : ");
+            System.out.print("Pesan: ");
             String ketikanSatuBaris = keyboard.nextLine();
                     
-            
+            // Tulis ke socket
             Writer keluaranWriter = new OutputStreamWriter(socket.getOutputStream()); 
             BufferedWriter keluaranBuff = new BufferedWriter(keluaranWriter);
             keluaranBuff.write(ketikanSatuBaris);
             keluaranBuff.write("\n");
             keluaranBuff.flush();
                 
-            
-            System.out.print("Dari server : ");
-            Reader masukan = new InputStreamReader(socket.getInputStream()); 
-            BufferedReader masukanBuff = new BufferedReader(masukan);
+            // Baca dari Server
+            System.out.print("Dari server: ");
+            masukan = new InputStreamReader(socket.getInputStream()); 
+            masukanBuff = new BufferedReader(masukan);
             String baris = masukanBuff.readLine();
-            System.out.println(baris); 
+            System.out.println(baris);
+            if(baris.equals("SIAPA")){
+             
+            }
+            else if(baris.equals("WAKTU")){
+               
+           
+            }
+           
             
-            
-            baris = baris.toUpperCase();
-            
-            
-            keluaranBuff.write(baris);
-            keluaranBuff.flush();
-            
-            
-            System.out.println("Pesan UPPER berhasil terkirim");
-            System.out.println();
-        }
+        
+          
+        
+          
+        }   
         catch(IOException salah) {
             System.out.println(salah);
         }
-        finally {
+    
+            finally {
             if (socket != null)
             socket.close();
+            }
         }
     }
-}
+
+
+
