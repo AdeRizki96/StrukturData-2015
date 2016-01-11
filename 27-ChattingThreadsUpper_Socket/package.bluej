@@ -51,6 +51,7 @@ target3.editor.x=436
 target3.editor.y=44
 target3.height=50
 target3.name=Server
+target3.naviview.expanded=false
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
